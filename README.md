@@ -24,9 +24,24 @@ pip install shutil
 pip install protobuf==3.20
 pip install h5py==2.10.0
 ```
-__Note: please unzip the gibbscluster-2.0f.Linux.tar.gz in the folder first, and modify the "FULL PATH" in the gibbscluster execution file__
+# Performance
+To evaluate the prediction performance of NetBCE, the 5-fold CV was performed on the training dataset. The ROC curves were drawn and the corresponding AUC values were calculated. We found that NetBCE had high performance with the average AUC values of 0.8455 by 5-fold CV, with a range from 0.8379 to 0.8528. Since the number of epitopes and non-epitopes were not balanced in the training dataset, we also performed PR analysis and calculated the corresponding AUC values. The PR curve indicates the trade-off between the amount of false positive predictions compared to the amount of false negative predictions. NetBCE achieved average PR AUC values of 0.6165, suggesting our model had great potential in predicting functional epitopes the high precision. We compared the performance of NetBCE with other 6 ML-based methods regarding AUC value (AB, DT, GB, KNN, LR and RF). We observed that average AUC of NetBCE was 8.77-21.58% higher than those of the other six ML-based methods. In addition, we compared NetBCE with other existing tools based on the curated independent dataset. NetBCE had high performance with the AUC values of 0.8400 on the independent dataset, and achieved a ≥ 22.06% improvement of AUC value for the B cell epitope prediction compared to other tools
+
+![image](https://github.com/BioDataStudy/NetBCE/blob/main/models/github_3.jpg)
+
+# Interpretability
+To elucidate the capability of hierarchical representation by NetBCE, we visualized the epitopes and non-epitopes using UMAP (Uniform Manifold Approximation and Projection) method based on the feature representation at varied network layers. We found the feature representation came to be more discriminative along the network layer hierarchy. More specifically, the feature representations for epitopes and non-epitopes sites were mixed at the input layer. As the model continues to train, epitopes and non-epitopes tend to occur in very distinct regions with efficient feature representation. 
+
+![image](https://github.com/BioDataStudy/NetBCE/blob/main/Interpretability/github_4.jpg)
 
 # Usage
-### ImmuneApp provides two services: precise antigen presentation prediction and clinical immunopeptidomic cohorts analysis.
-
-__1__. For antigen presentation prediction, this module accept two different types of input; FASTA and Peptide. In addition, candidate HLA molecules should be specified in the predictions. For FASTA input, the peptide length(s) should be specified.
+Please cd to the NetBCE/prediction/ folder which contains predict.py.
+Example: 
+```
+cd NetBCE/prediction/
+python NetBCE_prediction.py -f ../testdata/test.fasta -o ../result/test_result
+```
+For details of other parameters, run:
+```
+python NetBCE_prediction.py --help
+```
