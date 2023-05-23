@@ -50,13 +50,10 @@ RNA modification site prediction:
 python NetRNApan_prediction.py -f testdata/test.fasta -o results/test_result
 ```
 
-Deep learning model training:
+Model training:
 ```
-python NetRNApan_prediction.py -f testdata/test.fasta -o results/test_result
+python NetRNApan_training.py -f testdata/test.fasta -o results/test_result
 ```
-For details of other parameters, run:
-```
-python NetRNApan_prediction.py --help
-```
+
 # Citation
 Please cite the following paper for using: Xu H, Zhao Z. Deciphering RNA modification and post-transcriptional regulation by deep learning framework. In submission.
