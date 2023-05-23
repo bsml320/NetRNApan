@@ -52,7 +52,7 @@ python NetRNApan_prediction.py -f testdata/test.fasta -o results/test_result
 
 Model training:
 ```
-python NetRNApan_training.py -f testdata/test.fasta -o results/test_result
+python NetRNApan_training.py -f data/ -o results/test_result
 ```
 
 # Citation
