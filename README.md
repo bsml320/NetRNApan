@@ -45,10 +45,15 @@ Compared with the well characterized m6A modification and its increasingly promi
 <div align=center><img src="https://bioinfo.uth.edu/iapp/github/NetRNApan/Figure 6.jpg" width="800px"></div>
 
 # Usage
-Please cd to the NetBCE/prediction/ folder which contains predict.py.
+RNA modification site prediction:
 Example: 
 ```
-cd NetBCE/prediction/
+python NetRNApan_prediction.py -f testdata/test.fasta -o results/test_result
+```
+Deep learning model training:
+
+Example: 
+```
 python NetRNApan_prediction.py -f testdata/test.fasta -o results/test_result
 ```
 For details of other parameters, run:
