@@ -49,11 +49,11 @@ Please cd to the NetBCE/prediction/ folder which contains predict.py.
 Example: 
 ```
 cd NetBCE/prediction/
-python NetBCE_prediction.py -f ../testdata/test.fasta -o ../result/test_result
+python NetRNApan_prediction.py -f testdata/test.fasta -o results/test_result
 ```
 For details of other parameters, run:
 ```
-python NetBCE_prediction.py --help
+python NetRNApan_prediction.py --help
 ```
 # Citation
 Please cite the following paper for using: Xu H, Zhao Z. Deciphering RNA modification and post-transcriptional regulation by deep learning framework. In submission.
