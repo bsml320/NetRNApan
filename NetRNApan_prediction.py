@@ -11,8 +11,8 @@ import keras
 print('Ddeveloped with keras version 2.3.1, and current keras version: ',keras.__version__)
 
 #binding model
-model="./models/best_model.json"
-weight="./models/best_model.h5"
+model="models/best_model.json"
+weight="models/best_model.h5"
 
 #function to import keras NN model
 def get_model(model_name0,weight_name0):
