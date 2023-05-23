@@ -46,13 +46,11 @@ Compared with the well characterized m6A modification and its increasingly promi
 
 # Usage
 RNA modification site prediction:
-Example: 
 ```
 python NetRNApan_prediction.py -f testdata/test.fasta -o results/test_result
 ```
-Deep learning model training:
 
-Example: 
+Deep learning model training:
 ```
 python NetRNApan_prediction.py -f testdata/test.fasta -o results/test_result
 ```
