@@ -6,23 +6,21 @@ RNA modification, which is evolutionarily conserved, is crucial for modulating v
 <div align=center><img src="https://bioinfo.uth.edu/iapp/github/Figure1.jpg" width="800px"></div>
 
 # Installation
-Download ImmuneApp by
+Download NetRNApan by
 ```
-git clone https://github.com/bsml320/ImmuneApp
+git clone https://github.com/bsml320/NetRNApan
 ```
-Installation has been tested in Linux server, CentOS Linux release 7.8.2003 (Core), with Python 3.7. Since the package is written in python 3x, python3x with the pip tool must be installed. ImmuneApp uses the following dependencies: numpy, scipy, pandas, h5py, keras version=2.3.1, tensorflow=1.15, seaborn, logomaker, and shutil, pathlib. We highly recommend that users leave a message under the ImmuneApp issue interface (https://github.com/bsml320/ImmuneApp/issues) when encountering any installation and running problems. We will deal with it in time. You can install these packages by the following commands:
+Installation has been tested in Linux server, CentOS Linux release 7.8.2003 (Core), with Python 3.7. Since the package is written in python 3x, python3x with the pip tool must be installed. NetRNApan uses the following dependencies: numpy, scipy, pandas, h5py, keras version=2.3.1, tensorflow=1.15 shutil, and pathlib. We highly recommend that users leave a message under the NetRNApan issue interface (https://github.com/bsml320/NetRNApan/issue) when encountering any installation and running problems. We will deal with it in time. You can install these packages by the following commands:
 ```
-conda create -n ImmuneApp python=3.7
-conda activate ImmuneApp
+conda create -n NetRNApan python=3.7
+conda activate NetRNApan
 pip install pandas
 pip install numpy
 pip install scipy
 pip install -v keras==2.3.1
 pip install -v tensorflow==1.15
 pip install seaborn
-pip install logomaker
 pip install shutil
-pip install pathlib
 pip install protobuf==3.20
 pip install h5py==2.10.0
 ```
