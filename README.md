@@ -55,3 +55,5 @@ For details of other parameters, run:
 ```
 python NetBCE_prediction.py --help
 ```
+# Citation
+Please cite the following paper for using: Xu H, Zhao Z. Deciphering RNA modification and post-transcriptional regulation by deep learning framework. In submission.
