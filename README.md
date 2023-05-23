@@ -34,6 +34,11 @@ To elucidate the capability of hierarchical representation by NetBCE, we visuali
 
 ![image](https://github.com/BioDataStudy/NetBCE/blob/main/Interpretability/github_4.jpg)
 
+# Motif discovery and post-transcriptional regulation
+To elucidate the capability of hierarchical representation by NetBCE, we visualized the epitopes and non-epitopes using UMAP (Uniform Manifold Approximation and Projection) method based on the feature representation at varied network layers. We found the feature representation came to be more discriminative along the network layer hierarchy. More specifically, the feature representations for epitopes and non-epitopes sites were mixed at the input layer. As the model continues to train, epitopes and non-epitopes tend to occur in very distinct regions with efficient feature representation. 
+
+![image](https://github.com/BioDataStudy/NetBCE/blob/main/Interpretability/github_4.jpg)
+
 # Usage
 Please cd to the NetBCE/prediction/ folder which contains predict.py.
 Example: 
